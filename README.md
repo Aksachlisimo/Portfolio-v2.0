@@ -6,7 +6,7 @@ Freelance AI model trainer and evaluator (LLM evaluation, RLHF data, prompt test
 
 ## Stack
 
-Plain HTML, CSS and JavaScript. No framework, no build step, about 400 KB total.
+Plain HTML, CSS and JavaScript. No framework, no build step, under 300 KB total.
 
 - Light/dark theme (follows the OS)
 - Mobile-first responsive layout
