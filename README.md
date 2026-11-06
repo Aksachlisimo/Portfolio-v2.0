@@ -39,6 +39,7 @@ python3 -m http.server 8000
 - [Bulldozer Price Regression](https://github.com/Aksachlisimo/bulldozer_price_regression_project): Random Forest, validation RMSLE 0.247, R² 0.88
 - [Dog Vision](https://github.com/Aksachlisimo/dog_vision_project): MobileNetV2 transfer learning, 120 breeds
 - [Moon Healing](https://github.com/Aksachlisimo/moon_healing): bilingual client website ([live](https://moon-healing-zeta.vercel.app))
+- Arcadia Zoo: full-stack zoo website with role-based staff areas, Node.js/Express, PostgreSQL, MongoDB ([live](https://arcadia-zoo-v1.onrender.com))
 
 ## Contact
 
