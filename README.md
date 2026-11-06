@@ -8,17 +8,18 @@ Freelance AI model trainer and evaluator (LLM evaluation, RLHF data, prompt test
 
 Plain HTML, CSS and JavaScript. No framework, no build step, under 300 KB total.
 
-- Light/dark theme (follows the OS)
+- Interactive "Try my job" demo: visitors judge real-style LLM outputs in English, French and Arabic, then see the rubric scores and rationale
+- Bottom tab bar on phones, light/dark theme (follows the OS, with a toggle)
 - Mobile-first responsive layout
 - Contact form via [FormSubmit](https://formsubmit.co/) (no backend needed)
-- SEO: meta description, Open Graph/Twitter preview image, JSON-LD `Person` schema, sitemap, robots.txt
+- SEO: meta description, Open Graph/Twitter preview image, JSON-LD `Person` schema, sitemap, robots.txt, web manifest, 404 page
 
 ## Structure
 
 ```
 index.html
 assets/css/style.css
-assets/js/main.js
+assets/js/main.js    demo tasks (edit TASKS to change them), nav, form
 assets/img/          headshot, testimonial photo, Moon Healing screenshot, favicons, og.jpg (share preview)
 assets/cv/           downloadable CV (PDF)
 CNAME                custom domain

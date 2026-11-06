@@ -1,0 +1,12 @@
+{
+  "name": "Mohamed Mouhimine · AI Model Trainer & Evaluator",
+  "short_name": "Mouhimine",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f3f4f1",
+  "theme_color": "#2f6b58",
+  "icons": [
+    { "src": "assets/img/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "assets/img/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}
