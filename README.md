@@ -2,13 +2,13 @@
 
 Personal site: **[mohamedmouhimine.com](https://mohamedmouhimine.com/)**
 
-AI trainer and LLM evaluator (RLHF, model evaluation, prompt engineering) with a machine learning engineering background. Based in Strasbourg, France, working remotely in English and French.
+Freelance AI model trainer and evaluator (LLM evaluation, RLHF data, prompt testing) with a machine learning background. Based in Strasbourg, France, working remotely in English, French and Arabic.
 
 ## Stack
 
-Plain HTML, CSS and JavaScript. No framework, no build step, under 600 KB total.
+Plain HTML, CSS and JavaScript. No framework, no build step, about 400 KB total.
 
-- Light/dark theme (follows the OS, with a manual toggle)
+- Light/dark theme (follows the OS)
 - Mobile-first responsive layout
 - Contact form via [FormSubmit](https://formsubmit.co/) (no backend needed)
 - SEO: meta description, Open Graph/Twitter preview image, JSON-LD `Person` schema, sitemap, robots.txt
@@ -19,7 +19,7 @@ Plain HTML, CSS and JavaScript. No framework, no build step, under 600 KB total.
 index.html
 assets/css/style.css
 assets/js/main.js
-assets/img/          headshot, testimonial photo, favicons, og.jpg (share preview)
+assets/img/          headshot, testimonial photo, Moon Healing screenshot, favicons, og.jpg (share preview)
 assets/cv/           downloadable CV (PDF)
 CNAME                custom domain
 ```
@@ -34,9 +34,10 @@ python3 -m http.server 8000
 
 ## Projects
 
-- [Heart Disease Classification](https://github.com/Aksachlisimo/heart_disease_classification_project): scikit-learn, ~87% accuracy
-- [Bulldozer Price Regression](https://github.com/Aksachlisimo/bulldozer_price_regression_project): Random Forest, RMSLE ~0.25
-- [Dog Vision](https://github.com/Aksachlisimo/dog_vision_project): TensorFlow transfer learning, 120 breeds
+- [Heart Disease Classification](https://github.com/Aksachlisimo/heart_disease_classification_project): tuned Logistic Regression, 88.5% test accuracy, 0.92 recall (5-fold CV)
+- [Bulldozer Price Regression](https://github.com/Aksachlisimo/bulldozer_price_regression_project): Random Forest, validation RMSLE 0.247, R² 0.88
+- [Dog Vision](https://github.com/Aksachlisimo/dog_vision_project): MobileNetV2 transfer learning, 120 breeds
+- [Moon Healing](https://github.com/Aksachlisimo/moon_healing): bilingual client website ([live](https://moon-healing-zeta.vercel.app))
 
 ## Contact
 

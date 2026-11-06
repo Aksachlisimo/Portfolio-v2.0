@@ -2,50 +2,45 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mohamed Mouhimine · AI Trainer & LLM Evaluator</title>
-  <meta name="description" content="Freelance AI trainer and LLM evaluator based in Strasbourg, France. RLHF data, model evaluation, prompt engineering and applied machine learning in English and French.">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Mohamed Mouhimine · AI Model Trainer & Evaluator</title>
+  <meta name="description" content="Freelance AI model trainer and LLM evaluator in Strasbourg, France. RLHF data, LLM evaluation and prompt testing in English, French and Arabic.">
   <meta name="author" content="Mohamed Mouhimine">
   <link rel="canonical" href="https://mohamedmouhimine.com/">
-  <meta name="theme-color" content="#0b0f19" media="(prefers-color-scheme: dark)">
-  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#f3f4f1" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#111714" media="(prefers-color-scheme: dark)">
 
-  <!-- Social share preview (LinkedIn, X, WhatsApp, Slack) -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://mohamedmouhimine.com/">
-  <meta property="og:title" content="Mohamed Mouhimine · AI Trainer & LLM Evaluator">
-  <meta property="og:description" content="RLHF data, LLM evaluation, prompt engineering and applied ML. Freelance, remote, EN/FR.">
+  <meta property="og:title" content="Mohamed Mouhimine · AI Model Trainer & Evaluator">
+  <meta property="og:description" content="LLM evaluation, RLHF data and prompt testing. Freelance, remote, in English, French and Arabic.">
   <meta property="og:image" content="https://mohamedmouhimine.com/assets/img/og.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
 
-  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/img/favicon.png" type="image/png" sizes="64x64">
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Figtree:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
-
-  <script>
-    // Apply saved theme before paint to avoid a flash
-    document.documentElement.classList.add('js');
-    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
-  </script>
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Mohamed Mouhimine",
-    "jobTitle": "AI Trainer & LLM Evaluator",
+    "jobTitle": "AI Model Trainer & Evaluator",
     "url": "https://mohamedmouhimine.com/",
     "image": "https://mohamedmouhimine.com/assets/img/headshot.webp",
     "email": "mailto:mohamedmouhimine@gmail.com",
     "address": { "@type": "PostalAddress", "addressLocality": "Strasbourg", "addressCountry": "FR" },
+    "knowsLanguage": ["en", "fr", "ar", "tr"],
     "sameAs": ["https://www.linkedin.com/in/mohamed-mouhimine/", "https://github.com/Aksachlisimo"],
-    "knowsAbout": ["Machine Learning", "LLM Evaluation", "RLHF", "Prompt Engineering", "NLP", "Python"]
+    "knowsAbout": ["LLM evaluation", "RLHF", "Prompt engineering", "Data annotation", "Machine learning", "NLP", "Python"]
   }
   </script>
 </head>
@@ -54,302 +49,281 @@
   <a class="skip" href="#main">Skip to content</a>
 
   <header class="nav" id="top">
-    <div class="wrap nav__inner">
-      <a href="#top" class="brand" aria-label="Mohamed Mouhimine, back to top">
-        <img src="assets/img/favicon.png" alt="" width="28" height="28"><span>Mohamed Mouhimine</span>
-      </a>
+    <div class="wrap">
+      <a class="brand" href="#top"><img src="assets/img/favicon.svg" alt="" width="28" height="28"><span>Mohamed Mouhimine</span></a>
       <nav aria-label="Primary">
-        <button class="nav__toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
-          <span></span><span></span>
-        </button>
-        <ul id="nav-links" class="nav__links">
+        <ul>
           <li><a href="#services">Services</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contact" class="btn btn--sm">Hire me</a></li>
+          <li><a href="#about">About</a></li>
         </ul>
       </nav>
-      <button class="theme" aria-label="Toggle dark mode" title="Toggle theme">
-        <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
-        <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
-      </button>
+      <a class="btn btn--sm" href="#contact">Book a pilot</a>
     </div>
   </header>
 
   <main id="main">
-
-    <!-- Hero -->
     <section class="hero">
       <div class="wrap hero__grid">
         <div class="hero__text">
-          <p class="badge"><span class="dot"></span>Available for freelance AI training &amp; evaluation work</p>
-          <h1>I make language models <span class="accent">more accurate, safer and more useful.</span></h1>
-          <p class="lead">
-            AI trainer and LLM evaluator with 2 years of hands-on work on RLHF and evaluation pipelines
-            at Invisible Technologies and Outlier, backed by a machine learning engineering foundation.
-            Based in Strasbourg, working remotely worldwide in English and French.
-          </p>
-          <div class="cta">
-            <a href="#contact" class="btn">Start a project</a>
-            <a href="assets/cv/Mohamed_Mouhimine_CV.pdf" class="btn btn--ghost" download>
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 21h16"/></svg>Download CV
-            </a>
+          <div class="me">
+            <img src="assets/img/headshot.webp" width="56" height="56" alt="Mohamed Mouhimine" fetchpriority="high">
+            <span><strong>Mohamed Mouhimine</strong>Strasbourg, France · English, French, Arabic</span>
           </div>
-          <ul class="social" aria-label="Profiles">
-            <li><a href="https://www.linkedin.com/in/mohamed-mouhimine/" target="_blank" rel="noopener" aria-label="LinkedIn">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path class="fill" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.6c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9V21H9z"/></svg></a></li>
-            <li><a href="https://github.com/Aksachlisimo" target="_blank" rel="noopener" aria-label="GitHub">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path class="fill" d="M12 .5a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.7.8 1.2 1.9 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .5z"/></svg></a></li>
-            <li><a href="mailto:mohamedmouhimine@gmail.com" aria-label="Email">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a></li>
-          </ul>
+          <p class="label">Freelance AI model trainer &amp; evaluator</p>
+          <h1>Human judgment that makes your model <em>right more often.</em></h1>
+          <p class="lead">I score, rank and rewrite model outputs so your RLHF data and evals reflect what good actually looks like. Training production AI models since 2024, with a machine learning background to understand what the data is for.</p>
+          <div class="cta">
+            <a class="btn" href="#contact">Book a pilot batch</a>
+            <a class="btn btn--line" href="assets/cv/Mohamed_Mouhimine_CV.pdf" download>Download CV</a>
+          </div>
+          <p class="proof"><span>Currently training models with</span><strong>Invisible AI</strong><span>Previously</span><strong>Outlier AI</strong></p>
         </div>
-        <figure class="hero__photo">
-          <img src="assets/img/headshot.webp" width="640" height="880" alt="Portrait of Mohamed Mouhimine" fetchpriority="high">
+
+        <figure class="eval" aria-label="Example of a pairwise evaluation">
+          <div class="eval__head"><span>pairwise_eval · task 0412</span><span>example</span></div>
+          <div class="eval__body">
+            <p><span class="eval__k">Prompt</span>Customer: "Can I cancel my annual plan and get a refund? I bought it 20 days ago." Policy: refunds within 14 days of purchase.</p>
+            <div class="resps">
+              <p class="resp"><span class="eval__k">Response A</span>"Yes, you can cancel anytime and get a full refund."</p>
+              <p class="resp win"><span class="eval__k">Response B · preferred</span>"You can cancel anytime, but refunds only apply in the first 14 days, so at 20 days there's no refund. You keep access until the plan ends."</p>
+            </div>
+            <table class="rubric">
+              <thead><tr><th>Criterion</th><th>A</th><th>B</th></tr></thead>
+              <tbody>
+                <tr><td>Factual accuracy</td><td class="lo">1/5</td><td class="hi">5/5</td></tr>
+                <tr><td>Follows policy</td><td class="lo">1/5</td><td class="hi">5/5</td></tr>
+                <tr><td>Helpfulness</td><td>3/5</td><td class="hi">4/5</td></tr>
+              </tbody>
+            </table>
+            <p class="verdict"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><strong>B is much better.</strong> A promises a refund the policy rules out. B states the rule and tells the customer what happens next.</span></p>
+          </div>
+          <figcaption class="eval__foot">Illustrative task in the format I deliver: scores, preference and a written rationale.</figcaption>
         </figure>
       </div>
-
-      <div class="wrap">
-        <dl class="stats">
-          <div><dt>Years in AI training</dt><dd>2</dd></div>
-          <div><dt>Model outputs scored</dt><dd>1,000+</dd></div>
-          <div><dt>Working languages</dt><dd>EN · FR</dd></div>
-          <div><dt>ML projects shipped</dt><dd>3</dd></div>
-        </dl>
-      </div>
     </section>
 
-    <!-- Services -->
-    <section id="services" class="section">
+    <section class="section section--tint" id="services">
       <div class="wrap">
-        <header class="section__head">
-          <p class="eyebrow">What I do</p>
-          <h2>Services</h2>
-          <p>For AI labs, data vendors and teams shipping LLM features who need reliable human judgment in the loop.</p>
-        </header>
-        <div class="cards cards--4">
-          <article class="card reveal">
-            <div class="card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 11l3 3 8-8"/><path d="M20 12v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h9"/></svg></div>
+        <div class="head">
+          <p class="label">Services</p>
+          <h2>What I can take off your team's plate</h2>
+          <p>For AI labs, data vendors and product teams shipping LLM features. Available in English, French and Arabic.</p>
+        </div>
+        <div class="grid3">
+          <article class="card svc">
             <h3>LLM evaluation</h3>
-            <p>Rubric-based scoring of model outputs for factuality, reasoning, instruction-following and safety. Clear written rationales your team can act on.</p>
+            <p>Rubric-based scoring of model outputs for factuality, reasoning, instruction-following and safety.</p>
+            <ul><li>Per-item scores and rationale</li><li>Summary of failure patterns</li><li>Pairwise or absolute rating</li></ul>
+            <p class="for">Good for: model comparisons, release checks, vendor QA</p>
           </article>
-          <article class="card reveal">
-            <div class="card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h10M4 18h7"/><circle cx="18" cy="16" r="3"/></svg></div>
-            <h3>RLHF &amp; SFT data</h3>
-            <p>Preference ranking, response rewriting and high-quality supervised examples that hold up to reviewer QA.</p>
+          <article class="card svc">
+            <h3>RLHF &amp; fine-tuning data</h3>
+            <p>Preference rankings, rewritten responses and supervised examples written to hold up under reviewer QA.</p>
+            <ul><li>Preference pairs with justification</li><li>Gold-standard rewrites</li><li>SFT prompt and response sets</li></ul>
+            <p class="for">Good for: alignment work, domain fine-tunes</p>
           </article>
-          <article class="card reveal">
-            <div class="card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 9l-4 3 4 3M16 9l4 3-4 3M13 6l-2 12"/></svg></div>
-            <h3>Prompt engineering</h3>
-            <p>Designing and stress-testing prompts and system instructions, including adversarial cases that expose model weaknesses.</p>
-          </article>
-          <article class="card reveal">
-            <div class="card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg></div>
-            <h3>Applied ML</h3>
-            <p>Prototyping classification, regression and vision models in Python with scikit-learn and TensorFlow, from EDA to evaluation.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Experience -->
-    <section id="experience" class="section section--alt">
-      <div class="wrap">
-        <header class="section__head">
-          <p class="eyebrow">Track record</p>
-          <h2>Experience &amp; education</h2>
-        </header>
-
-        <div class="timeline-grid">
-          <div>
-            <h3 class="col-title">Work</h3>
-            <ol class="timeline">
-              <li class="reveal">
-                <div class="tl__meta"><span class="tl__date">Oct 2025 – Present</span><span class="tl__org">Invisible Technologies · Freelance</span></div>
-                <h4>AI Trainer</h4>
-                <ul>
-                  <li>Train and validate LLM outputs to improve accuracy, reasoning and factuality.</li>
-                  <li>Create, review and refine datasets for supervised fine-tuning and RLHF pipelines.</li>
-                  <li>Evaluate responses across diverse domains against human-preference and safety guidelines.</li>
-                  <li>Flag systematic model weaknesses to project leads so they can target fixes.</li>
-                </ul>
-              </li>
-              <li class="reveal">
-                <div class="tl__meta"><span class="tl__date">Nov 2024 – Jul 2025</span><span class="tl__org">Outlier AI · Freelance</span></div>
-                <h4>AI Model Trainer &amp; Evaluator</h4>
-                <ul>
-                  <li>Engineered prompts for GPT-based LLMs, improving factual accuracy by 15% on internal benchmarks.</li>
-                  <li>Scored 1,000+ outputs for factuality and instruction-following.</li>
-                  <li>Performed fine-grained NLP evaluation and annotation for alignment tasks.</li>
-                  <li>Contributed to classification and generation model benchmarks.</li>
-                </ul>
-              </li>
-            </ol>
-          </div>
-
-          <div>
-            <h3 class="col-title">Education</h3>
-            <ol class="timeline">
-              <li class="reveal">
-                <div class="tl__meta"><span class="tl__date">Apr 2025 – Sep 2025</span><span class="tl__org">Zero to Mastery Academy</span></div>
-                <h4>Complete AI &amp; Machine Learning Bootcamp</h4>
-                <ul>
-                  <li>End-to-end ML workflow: EDA, cleaning, feature engineering, training, evaluation, deployment.</li>
-                  <li>Classification, regression and deep learning with scikit-learn, TensorFlow and PyTorch.</li>
-                </ul>
-              </li>
-              <li class="reveal">
-                <div class="tl__meta"><span class="tl__date">May 2024 – Jan 2025</span><span class="tl__org">STUDI, France</span></div>
-                <h4>Associate's degree, Web Development</h4>
-                <ul>
-                  <li>Responsive front-end, back-end business logic, SQL &amp; NoSQL databases, AWS deployment.</li>
-                </ul>
-              </li>
-              <li class="reveal">
-                <div class="tl__meta"><span class="tl__date">2021</span><span class="tl__org">Zero to Mastery Academy</span></div>
-                <h4>Full-Stack Web Development Bootcamp</h4>
-                <ul>
-                  <li>HTML, CSS, JavaScript, Python, SQL, APIs and deployment workflows.</li>
-                </ul>
-              </li>
-            </ol>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects -->
-    <section id="projects" class="section">
-      <div class="wrap">
-        <header class="section__head">
-          <p class="eyebrow">Selected work</p>
-          <h2>Projects</h2>
-          <p>End-to-end machine learning projects, each with code, data prep and evaluation on GitHub.</p>
-        </header>
-
-        <div class="cards cards--3">
-          <article class="project reveal">
-            <div class="project__metric"><span class="num">~87%</span><span class="lbl">accuracy</span></div>
-            <h3>Heart disease classification</h3>
-            <p>Predicts heart disease from patient data (Cleveland dataset). EDA, cleaning and encoding, then Logistic Regression vs Random Forest, validated with confusion matrix and classification report.</p>
-            <ul class="tags"><li>scikit-learn</li><li>Classification</li><li>Pandas</li></ul>
-            <a class="link" href="https://github.com/Aksachlisimo/heart_disease_classification_project" target="_blank" rel="noopener">View code <span aria-hidden="true">→</span></a>
-          </article>
-
-          <article class="project reveal">
-            <div class="project__metric"><span class="num">~0.25</span><span class="lbl">RMSLE</span></div>
-            <h3>Bulldozer price regression</h3>
-            <p>Predicts auction prices for used bulldozers from historical sales. Time-based feature engineering and tuned Random Forest on a large tabular time-series dataset.</p>
-            <ul class="tags"><li>scikit-learn</li><li>Regression</li><li>Feature engineering</li></ul>
-            <a class="link" href="https://github.com/Aksachlisimo/bulldozer_price_regression_project" target="_blank" rel="noopener">View code <span aria-hidden="true">→</span></a>
-          </article>
-
-          <article class="project reveal">
-            <div class="project__metric"><span class="num">120</span><span class="lbl">dog breeds</span></div>
-            <h3>Dog Vision</h3>
-            <p>Multi-class image classifier using transfer learning on a pretrained CNN. Image preprocessing pipeline, training, and real-world testing on custom photos.</p>
-            <ul class="tags"><li>TensorFlow</li><li>Transfer learning</li><li>Computer vision</li></ul>
-            <a class="link" href="https://github.com/Aksachlisimo/dog_vision_project" target="_blank" rel="noopener">View code <span aria-hidden="true">→</span></a>
+          <article class="card svc">
+            <h3>Prompt &amp; adversarial testing</h3>
+            <p>Stress-testing prompts and system instructions to find where a model breaks before your users do.</p>
+            <ul><li>Adversarial prompt sets</li><li>Reproducible failure cases</li><li>Prompt fixes, tested</li></ul>
+            <p class="for">Good for: chatbots, assistants, support bots</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Skills -->
-    <section id="skills" class="section section--alt">
-      <div class="wrap">
-        <header class="section__head">
-          <p class="eyebrow">Toolkit</p>
-          <h2>Skills</h2>
-        </header>
-        <div class="skills">
-          <div class="skill-group reveal">
-            <h3>AI training &amp; evaluation</h3>
-            <ul class="chips"><li>LLM evaluation</li><li>RLHF</li><li>SFT data</li><li>Prompt engineering</li><li>Red teaming</li><li>Data annotation</li><li>Rubric design</li></ul>
-          </div>
-          <div class="skill-group reveal">
-            <h3>Machine learning</h3>
-            <ul class="chips"><li>Supervised learning</li><li>Unsupervised learning</li><li>Deep learning</li><li>NLP</li><li>Transfer learning</li></ul>
-          </div>
-          <div class="skill-group reveal">
-            <h3>Languages &amp; libraries</h3>
-            <ul class="chips"><li>Python</li><li>Pandas</li><li>NumPy</li><li>scikit-learn</li><li>TensorFlow</li><li>PyTorch</li><li>Keras</li><li>SQL</li></ul>
-          </div>
-          <div class="skill-group reveal">
-            <h3>Tools &amp; deployment</h3>
-            <ul class="chips"><li>Git &amp; GitHub</li><li>Docker</li><li>Hugging Face Hub</li><li>Jupyter</li><li>Google Colab</li><li>CI/CD</li><li>Postman</li></ul>
-          </div>
-          <div class="skill-group reveal">
-            <h3>Web</h3>
-            <ul class="chips"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>React</li><li>Node.js</li></ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Testimonial -->
     <section class="section">
       <div class="wrap">
-        <figure class="quote reveal">
-          <svg class="quote__mark" viewBox="0 0 24 24" aria-hidden="true"><path class="fill" d="M10 7H6a3 3 0 0 0-3 3v4h5v-4H5.5A1.5 1.5 0 0 1 7 8.5h3zm11 0h-4a3 3 0 0 0-3 3v4h5v-4h-2.5A1.5 1.5 0 0 1 18 8.5h3z"/></svg>
-          <blockquote>
-            <p>Independent, rigorous, and a good communicator, Mohamed adapted to every challenge and delivered high-quality work throughout the program. He also has genuine human qualities that make him always ready to help others and take initiative. I recommend Mohamed.</p>
-          </blockquote>
-          <figcaption>
-            <img src="assets/img/danyl.webp" width="56" height="56" alt="" loading="lazy">
-            <span><strong>Danyl Semmache</strong>Software Engineer · former mentor</span>
-          </figcaption>
+        <div class="head">
+          <p class="label">How we'd work</p>
+          <h2>Start small, then scale</h2>
+        </div>
+        <ol class="steps">
+          <li class="step"><h3>Agree the rubric</h3><p>We define what "good" means for your use case and turn it into criteria I can score consistently.</p></li>
+          <li class="step"><h3>Run a pilot batch</h3><p>I deliver a small paid batch so you can check quality and agreement against your own reviewers.</p></li>
+          <li class="step"><h3>Scale with QA</h3><p>Once the pilot meets your bar, I work through the full volume with spot checks and a weekly summary.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section--tint" id="experience">
+      <div class="wrap">
+        <div class="head">
+          <p class="label">Experience</p>
+          <h2>Training production AI models since 2024</h2>
+        </div>
+        <div>
+          <article class="job">
+            <p class="job__when"><strong>Invisible AI</strong>Oct 2025 – present · freelance</p>
+            <div>
+              <h3>AI Model Trainer</h3>
+              <ul>
+                <li>Train and evaluate model outputs across NLP and LLM tasks.</li>
+                <li>Annotation, quality review and structured evaluation for reliable model behaviour.</li>
+                <li>Apply prompt-level feedback and evaluation guidelines to improve instruction-following.</li>
+                <li>Work in large-scale production workflows against quality, consistency and turnaround targets.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="job">
+            <p class="job__when"><strong>Outlier AI</strong>Nov 2024 – Jul 2025 · freelance</p>
+            <div>
+              <h3>AI Model Trainer &amp; Evaluator</h3>
+              <ul>
+                <li>Scored <span class="stat">1,000+</span> model outputs for factuality and instruction-following.</li>
+                <li>Engineered prompts for GPT-based models, improving factual accuracy by <span class="stat">15%</span> on benchmarks.</li>
+                <li>Fine-grained NLP evaluation and annotation for alignment tasks.</li>
+                <li>Contributed to classification and generation model benchmarks.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="wrap">
+        <div class="head">
+          <p class="label">Projects</p>
+          <h2>I know what the data is for</h2>
+          <p>Machine learning models I built end to end in Python. Every figure comes from the notebook on GitHub.</p>
+        </div>
+        <div class="grid3">
+          <article class="card proj">
+            <p class="proj__metric">88.5%<small>test accuracy</small></p>
+            <h3>Heart disease prediction</h3>
+            <p>Classifies heart disease from 13 clinical features. Compared three models, then tuned Logistic Regression with grid search.</p>
+            <dl><dt>Recall (5-fold CV)</dt><dd>0.92</dd><dt>F1 (5-fold CV)</dt><dd>0.87</dd><dt>Stack</dt><dd>scikit-learn</dd></dl>
+            <a class="more" href="https://github.com/Aksachlisimo/heart_disease_classification_project" target="_blank" rel="noopener">View notebook →</a>
+          </article>
+          <article class="card proj">
+            <p class="proj__metric">R² 0.88<small>on a held-out validation year</small></p>
+            <h3>Bulldozer auction prices</h3>
+            <p>Predicts resale prices from 400,000+ historical auctions using time-based features and a tuned Random Forest.</p>
+            <dl><dt>Valid RMSLE</dt><dd>0.247</dd><dt>Mean abs. error</dt><dd>≈ $5,960</dd><dt>Stack</dt><dd>scikit-learn</dd></dl>
+            <a class="more" href="https://github.com/Aksachlisimo/bulldozer_price_regression_project" target="_blank" rel="noopener">View notebook →</a>
+          </article>
+          <article class="card proj">
+            <p class="proj__metric">120<small>dog breeds</small></p>
+            <h3>Dog breed vision</h3>
+            <p>Image classifier using transfer learning on MobileNetV2, trained on 10,000+ labelled photos and tested on my own images.</p>
+            <dl><dt>Approach</dt><dd>Transfer learning</dd><dt>Training images</dt><dd>10,222</dd><dt>Stack</dt><dd>TensorFlow</dd></dl>
+            <a class="more" href="https://github.com/Aksachlisimo/dog_vision_project" target="_blank" rel="noopener">View notebook →</a>
+          </article>
+        </div>
+
+        <article class="card client">
+          <img src="assets/img/moon-healing.webp" width="960" height="600" alt="Moon Healing homepage: a live moon-phase drawing beside the headline Slow down. Come back to yourself." loading="lazy">
+          <div class="client__text">
+            <p class="label">Client website</p>
+            <h3>Moon Healing</h3>
+            <p>Bilingual (English and Vietnamese) website for a reiki and massage practice in Đà Nẵng, Vietnam. A booking assistant writes the client's message and only offers open slots, and prices switch between VND, EUR and USD. The hero draws today's moon phase live.</p>
+            <ul class="tags"><li>HTML/CSS/JS</li><li>No dependencies</li><li>Mobile-first</li><li>Vercel</li></ul>
+            <div class="client__links">
+              <a class="btn btn--sm" href="https://moon-healing-zeta.vercel.app" target="_blank" rel="noopener">Visit live site</a>
+              <a class="btn btn--sm btn--line" href="https://github.com/Aksachlisimo/moon_healing" target="_blank" rel="noopener">View code</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section--tint">
+      <div class="wrap">
+        <figure class="quote">
+          <p class="label">Recommendation</p>
+          <blockquote><p>"Independent, rigorous, and a good communicator. Mohamed adapted to every challenge and delivered high-quality work throughout the program. He is always ready to help others and take initiative."</p></blockquote>
+          <figcaption><img src="assets/img/danyl.webp" width="48" height="48" alt="" loading="lazy"><span><strong>Danyl Semmache</strong>Software Engineer, former mentor</span></figcaption>
         </figure>
       </div>
     </section>
 
-    <!-- Contact -->
-    <section id="contact" class="section section--alt">
+    <section class="section" id="about">
+      <div class="wrap about">
+        <div class="about__photo"><img src="assets/img/headshot.webp" width="640" height="880" alt="Portrait of Mohamed Mouhimine" loading="lazy"></div>
+        <div class="about__text">
+          <p class="label">About</p>
+          <h2 class="h2">Hi, I'm Mohamed.</h2>
+          <p>I'm a freelance AI model trainer based in Strasbourg. I started in web development, moved into machine learning, and now work on the part of AI most teams struggle to staff: careful, consistent human judgment.</p>
+          <p>Because I've built and evaluated models myself, I understand why a rubric exists and what a bad label costs downstream. I work remotely on CET hours, in English, French or Arabic.</p>
+          <div class="facts">
+            <div>
+              <h3>Education</h3>
+              <ul>
+                <li>CS50's Introduction to AI with Python<span>HarvardX · 2026</span></li>
+                <li>CS50's Introduction to Programming with Python<span>HarvardX · 2026</span></li>
+                <li>Complete AI &amp; Machine Learning Bootcamp<span>Zero to Mastery · Apr – Nov 2025</span></li>
+                <li>Associate's degree, Web Development<span>STUDI, France · 2024 – 2025</span></li>
+              </ul>
+            </div>
+            <div>
+              <h3>Languages</h3>
+              <ul>
+                <li>Arabic<span>Native</span></li>
+                <li>English<span>Professional</span></li>
+                <li>French<span>Professional</span></li>
+                <li>Turkish<span>Conversational</span></li>
+              </ul>
+            </div>
+            <div>
+              <h3>Toolkit</h3>
+              <ul class="chips">
+                <li>LLM evaluation</li><li>RLHF</li><li>Prompt engineering</li><li>Data annotation</li><li>NLP</li><li>Python</li><li>Pandas</li><li>NumPy</li><li>scikit-learn</li><li>TensorFlow</li><li>Keras</li><li>Hugging Face</li><li>SQL</li><li>Docker</li><li>Git</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tint" id="contact">
       <div class="wrap contact">
         <div class="contact__intro">
-          <p class="eyebrow">Contact</p>
-          <h2>Let's work together</h2>
-          <p>Need evaluators for an LLM project, RLHF data, or an ML prototype? Tell me about it and I'll reply within 24 hours.</p>
-          <ul class="contact__list">
-            <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:mohamedmouhimine@gmail.com">mohamedmouhimine@gmail.com</a></li>
-            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Strasbourg, France · Remote (CET)</li>
-            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path class="fill" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.6c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9V21H9z"/></svg><a href="https://www.linkedin.com/in/mohamed-mouhimine/" target="_blank" rel="noopener">linkedin.com/in/mohamed-mouhimine</a></li>
-          </ul>
+          <p class="label">Contact</p>
+          <h2 class="h2">Have an evaluation or data project?</h2>
+          <p>Tell me what you're building, the volume and your deadline. I reply within one working day.</p>
+          <div class="copy"><a id="email" href="mailto:mohamedmouhimine@gmail.com">mohamedmouhimine@gmail.com</a><button class="btn btn--sm btn--line" type="button" id="copy">Copy email</button></div>
+          <div class="links">
+            <a class="btn btn--sm btn--line" href="https://www.linkedin.com/in/mohamed-mouhimine/" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn btn--sm btn--line" href="https://github.com/Aksachlisimo" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn btn--sm btn--line" href="assets/cv/Mohamed_Mouhimine_CV.pdf" download>CV (PDF)</a>
+          </div>
         </div>
 
-        <!-- FormSubmit: free, no backend. First submission sends an activation email to the address below. -->
-        <form class="form" action="https://formsubmit.co/mohamedmouhimine@gmail.com" method="POST" novalidate>
-          <input type="hidden" name="_subject" value="New portfolio enquiry">
+        <!-- FormSubmit: no backend needed. The first submission sends an activation email to this address. -->
+        <form class="form" id="form" action="https://formsubmit.co/mohamedmouhimine@gmail.com" method="POST" novalidate>
+          <input type="hidden" name="_subject" value="New project enquiry from mohamedmouhimine.com">
           <input type="hidden" name="_template" value="table">
           <input type="hidden" name="_captcha" value="false">
           <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
-          <div class="form__row">
-            <label>Name<input type="text" name="name" autocomplete="name" required></label>
-            <label>Email<input type="email" name="email" autocomplete="email" required></label>
+          <div class="row">
+            <label for="f-name">Name<input id="f-name" name="name" autocomplete="name" required></label>
+            <label for="f-email">Work email<input id="f-email" name="email" type="email" autocomplete="email" required></label>
           </div>
-          <label>What do you need?
-            <select name="topic">
+          <label for="f-type">Project type
+            <select id="f-type" name="type">
               <option>LLM evaluation</option>
-              <option>RLHF / SFT data</option>
-              <option>Prompt engineering</option>
-              <option>ML project</option>
+              <option>RLHF / fine-tuning data</option>
+              <option>Prompt &amp; adversarial testing</option>
+              <option>Website</option>
               <option>Job opportunity</option>
               <option>Something else</option>
             </select>
           </label>
-          <label>Message<textarea name="message" rows="6" required></textarea></label>
-          <button type="submit" class="btn btn--full">Send message</button>
-          <p class="form__status" role="status" aria-live="polite"></p>
+          <label for="f-msg">Details<textarea id="f-msg" name="message" rows="5" placeholder="What you're building, rough volume, language and deadline" required></textarea></label>
+          <button class="btn" type="submit">Send project details</button>
+          <p class="status" id="status" role="status" aria-live="polite"></p>
         </form>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="wrap footer__inner">
-      <p>© <span id="year">2026</span> Mohamed Mouhimine</p>
-      <p><a href="#top">Back to top ↑</a></p>
+  <footer>
+    <div class="wrap">
+      <span>© <span id="year">2026</span> Mohamed Mouhimine · Strasbourg, France</span>
+      <a href="#top">Back to top ↑</a>
     </div>
   </footer>
 
