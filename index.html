@@ -249,7 +249,10 @@
 
         <article class="card client">
           <a class="client__shot" href="https://moon-healing-zeta.vercel.app" target="_blank" rel="noopener" aria-label="Open the Moon Healing website">
-            <img src="assets/img/moon-healing.webp" width="960" height="600" alt="Moon Healing homepage with a live moon-phase drawing beside the headline Slow down. Come back to yourself." loading="lazy">
+            <picture>
+              <source media="(max-width: 599px)" srcset="assets/img/moon-healing-mobile.webp" width="780" height="840">
+              <img src="assets/img/moon-healing.webp" width="1200" height="750" alt="Moon Healing homepage with a live moon-phase drawing beside the headline Slow down. Come back to yourself." loading="lazy">
+            </picture>
           </a>
           <div class="client__text">
             <p class="label">Client website</p>
@@ -263,20 +266,6 @@
           </div>
         </article>
 
-        <article class="card client client--flip">
-          <a class="client__shot" href="https://arcadia-zoo-v1.onrender.com" target="_blank" rel="noopener" aria-label="Open the Arcadia Zoo website">
-            <img src="assets/img/arcadia-zoo.webp" width="960" height="600" alt="Arcadia Zoo website: green navigation bar above photos of deer, a giraffe and kangaroos" loading="lazy">
-          </a>
-          <div class="client__text">
-            <p class="label">Full-stack web app</p>
-            <h3>Arcadia Zoo</h3>
-            <p>French-language zoo website built for my web development degree. Visitors browse habitats, animals and services and leave reviews. Staff sign in by role: admins manage accounts and services, employees moderate reviews, and vets file reports on each habitat.</p>
-            <ul class="tags"><li>Node.js</li><li>Express</li><li>PostgreSQL</li><li>MongoDB</li><li>bcrypt auth</li><li>Docker</li></ul>
-            <div class="row-btns">
-              <a class="btn btn--sm" href="https://arcadia-zoo-v1.onrender.com" target="_blank" rel="noopener">Visit live site</a>
-            </div>
-          </div>
-        </article>
       </div>
     </section>
 
