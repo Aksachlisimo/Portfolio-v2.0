@@ -39,6 +39,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 figure, blockquote { margin: 0; }
 a { color: var(--accent); }
 img, svg { max-width: 100%; display: block; }
+img { height: auto; }
 button { font: inherit; color: inherit; }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
 [lang="ar"] { font-family: var(--arabic); line-height: 1.8; }
@@ -236,7 +237,7 @@ svg.i { fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round
 /* About */
 .about { display: grid; gap: 32px; }
 @media (min-width: 900px) { .about { grid-template-columns: 320px 1fr; gap: 64px; } }
-.about__photo img { border-radius: var(--radius-lg); aspect-ratio: 4 / 5; object-fit: cover; width: 100%; max-width: 320px; }
+.about__photo img { border-radius: var(--radius-lg); aspect-ratio: 4 / 5; object-fit: cover; object-position: center 30%; width: 100%; height: auto; max-width: 320px; }
 @media (max-width: 899px) { .about__photo img { max-width: 200px; } }
 .about__text { min-width: 0; }
 .about__text .h2 { margin-bottom: 16px; }
@@ -301,4 +302,5 @@ footer a { color: var(--muted); display: inline-flex; align-items: center; min-h
 [hidden] { display: none !important; }
 .judge__foot .btn { white-space: nowrap; flex-shrink: 0; }
 .client__shot picture { display: block; height: 100%; }
+@media (max-width: 899px) { .client__shot picture, .client__shot img { height: auto; } }
 @media (max-width: 599px) { .client__shot img { aspect-ratio: 780 / 840; object-position: center top; } }
